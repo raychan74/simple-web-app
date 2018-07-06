@@ -35,6 +35,7 @@ export const Link = styled.a`
 	margin: 0 auto;
 	font-size: 18px;
 	background: #dadada;
+	color: black;
 
 	&:visited {
 		color: black;
