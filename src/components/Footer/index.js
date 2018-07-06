@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import { Container, CardContainer } from './Styles';
+import { Container, CardContainer, Logo } from './Styles';
 import FooterCard from './FooterCard';
 
 type FooterInfo = Array<{
@@ -11,22 +11,23 @@ type FooterInfo = Array<{
 
 const footerInfo: FooterInfo = [
 	{
-		heading: 'About Us',
-		items: ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur']
-	},
-	{
 		heading: 'Product',
-		items: ['sit', 'amet', 'consectetur']
+		items: ['consectetur', 'sit', 'amet']
 	},
 	{
 		heading: 'Contact',
 		items: ['Lorem', 'ipsum', 'dolor', 'consectetur']
 	},
+	{
+		heading: 'About Us',
+		items: ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur']
+	}
 ];
 
 const Footer = () => {
 	return (
 		<Container>
+			<Logo src='image/FakeIcon.jpg' alt='Company Logo' />
 			{footerInfo.map(cardInfo => {
 				return (
 					<CardContainer key={cardInfo.heading}>

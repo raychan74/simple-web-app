@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-	background: url('image/wooden.jpg');
+	background: url('image/hero.jpg');
 	background-size: cover;
-	background-position: cneter;
+	background-position: center;
 	width: 100%;
-	height: 80vh;
+	height: 60vh;
+
+	@media (min-width: 768px) {
+		height: 80vh;
+	}
 `;
